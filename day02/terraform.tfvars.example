@@ -1,0 +1,8 @@
+# Example Terraform variables
+# Copy this file:
+#
+# cp terraform.tfvars.example terraform.tfvars
+
+aws_region = "YOUR_AWS_REGION"
+
+bucket_name = "YOUR_UNIQUE_BUCKET_NAME"
