@@ -1,0 +1,5 @@
+# Copy this file to terraform.tfvars before running Terraform
+
+aws_region  = "us-east-1"
+bucket_name = "your-unique-s3-bucket-name"
+environment = "learning"
