@@ -1,12 +1,19 @@
-# Backend Variables
-variable "state_bucket_name" {
-    default = "terraweek-demo-state-bucket"
-}
-
-variable "state_table_name" {
-    default = "terraweek-demo-state-table"
-}
-
 variable "aws_region" {
-    default = "us-east-1"
+  description = "AWS region where the backend infrastructure will be created"
+  type        = string
+}
+
+variable "state_bucket_name" {
+  description = "Globally unique name for the Terraform remote state S3 bucket"
+  type        = string
+}
+
+variable "environment" {
+  description = "Environment name used for resource tagging"
+  type        = string
+}
+
+variable "project_name" {
+  description = "Project name used for resource tagging"
+  type        = string
 }
